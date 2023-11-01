@@ -23,3 +23,7 @@ func (l List[T]) Get(index int) (_ T, err error) {
 	}
 	return l.data[index], nil
 }
+
+func (l List[T]) String() string {
+	return fmt.Sprintf("%v", l.data)
+}

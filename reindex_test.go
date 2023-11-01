@@ -43,7 +43,7 @@ func TestList(t *testing.T) {
 					t.Errorf("not same %d != %d", a, ts[p].to)
 				}
 			}
-			fmt.Fprintf(&buf, "%v\n", l.data)
+			fmt.Fprintf(&buf, "%s\n", l)
 			if _, err := l.Get(10000); err == nil {
 				t.Errorf("out of range")
 			}
